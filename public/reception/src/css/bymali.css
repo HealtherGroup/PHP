@@ -1,0 +1,75 @@
+.by-mail-bg{
+	width: 100%;
+	padding: 60px 0;
+	background-color: #DADBDA;
+	color: #474C45;
+}
+
+.by-mail-warp{
+	max-width: 320px;
+	margin: 0 auto;
+	padding: 40px 30px;
+	background-color: #ECEDEC;
+	font-size: 16px;
+	position: relative;
+}
+
+.by-mail-warp h3{
+	text-align: center;
+	height: 66px;
+	margin-bottom: 20px;
+	font-size: 22px;
+	font-weight: 400;
+	color: #474C45;
+}
+
+.by-mail-warp .txt p{
+	font-size: 1.4rem;
+	text-align: center;
+	line-height: 30px;
+}
+
+.by-mail-warp .goto{
+	line-height: 30px;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+.by-mail-warp .goto a{
+	color: #4BACD3;
+}
+
+.by-mail-warp .goto i{
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	background: url(../iconfont3/sanjiao.png) center no-repeat;
+}
+
+.by-mail-warp .if{
+	line-height: 30px;
+	text-align: center;
+	font-size: 1.4rem;
+	margin-top: 30px;
+}
+
+.by-mail-warp .if a{
+	color: #4BACD3;
+}
+
+.by-mail-warp .if i{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../iconfont3/dp.png) center no-repeat;
+}
+
+.by-mail-warp .if a i{
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	background: url(../iconfont3/f5.png) center no-repeat;
+}
+

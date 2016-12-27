@@ -1,0 +1,284 @@
+/*body*/
+body{
+	border-top:121px solid #89C86D;
+}
+html,body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6{
+	font-family:"思源黑体","微软雅黑";
+}
+header{
+	width: 100%;
+	position:fixed;
+    top: 0px;
+    left: 0px;
+    z-index:160;
+}
+nav{
+	width:100%;
+    background:#fafafa;
+	overflow:hidden;
+    line-height:62px;
+    border-bottom: 1px solid #ECEDEC;
+}
+nav img{
+	vertical-align:middle;
+}
+nav>div{
+	max-width:1200px;
+	width:90%;
+	margin:0 auto;
+}
+nav>div>a{
+	float:left;
+}
+nav>div>span{
+	width:24%;
+	display:none;
+	position:absolute;
+	top:62px;
+	right:0;
+	text-align:center;
+	z-index:161;
+	font-size:1.4rem;
+}
+nav>div>span>ul>li{
+	line-height:36px;
+	background:#fff;
+	/*border-bottom:1px solid #89C86D;*/
+}
+nav>div>div>a{
+	padding:0 14px;
+}
+.nav-ul-1>li{
+	float:left;
+	margin-right:30px;
+}
+.nav-ul-1>.nav-ul-1-li{
+	margin:0;
+}
+.guoqi{
+	width:30px;
+}
+.nav-ul-1{
+	margin:0;
+	float:right;
+}
+/*my-nav-sousuo*/
+
+.my-nav-sousuo{
+	width:100%;
+	display:none;
+	overflow:hidden;
+	background:#fafafa;
+}
+.my-nav-sousuo>div{
+	width:80%;
+	margin:0 auto;
+	overflow:hidden;
+}
+.my-nav-sousuo>div>input{
+	width:80%;
+	margin:1% 0;
+	border:0;
+	font-size:2.4rem;
+	background:#fafafa;
+}
+.my-nav-sousuo-img1{
+	margin:2.2% 2%;
+}
+.my-nav-sousuo-img{
+	margin:2% 2%;
+}
+/*my-nav-yuyan*/
+
+.my-nav-yuyan{
+	width:100%;
+	height:136px;
+	overflow:hidden;
+	display:none;
+	background:#fafafa;
+}
+.my-nav-yuyan>div{
+	width:70%;
+	height:100%;
+	margin:0 auto;
+	line-height:100%;
+}
+.my-nav-yuyan>div>ul{
+	width:100%;
+	overflow:hidden;
+	display:block;
+}
+.my-nav-yuyan>div>ul>li{
+	text-align:center;
+	width:12.4%;
+	float:left;
+}
+.my-nav-yuyan>div>.my-nav-yuyan-ul1{
+	margin:1% 0;
+}
+.guoqi{
+	vertical-align:middle;
+}
+
+/*header*/
+
+.header{
+	width:100%;
+	background:rgba(137,200,109,0.95);
+	position:absolute;
+}
+.header>.header-div1{
+	line-height:54px;
+	text-align:center;
+	width:40%;
+	margin:0 auto;
+	transition: line-height 0.3s;
+	overflow:hidden;
+
+}
+.header>.header-div1>ul{
+	width:100%;
+}
+.header>.header-div1>ul>li{
+	color:#F9FCF8;
+	width:30%;
+	font-size:1.5rem;
+	float:left;
+}
+.header>.header-div1>ul>li:hover{
+	color:#fafafa;
+	background:#75b05a;
+}
+.header-div2{
+	width:100%;
+	margin-top:54px;
+	overflow:hidden;
+	background:#fff;
+	display:none;
+}
+.header-div2>table{
+	margin:10px 0;
+	width:50%;
+	float:left;
+}
+.header-div2>table+table{
+	border-left:solid 1px #ccc;
+}
+header>.header-div2 th{
+	text-align:center;
+	font-size:1.6rem;
+	padding:10px;
+}
+header>.header-div2 td{
+	text-align:center;
+	padding:10px 5px;
+}
+header td:hover{
+	color:#89C86D;
+	background:#fafafa;
+	cursor: pointer;
+}
+.header-div3{
+	width:100%;
+	margin-top:54px;
+	overflow:hidden;
+	background:#fff;
+	display:none;
+}
+.header-div3>table{
+	margin:10px 0;
+	width:50%;
+	float:left;
+}
+.header-div3>table+table{
+	border-left:solid 1px #ccc;
+}
+header>.header-div3 th{
+	font-size:1.6rem;
+	text-align:center;
+	padding:10px;
+}
+header>.header-div3 td{
+	text-align:center;
+	padding:10px;
+}
+
+.header-div4{
+	width:100%;
+	margin-top:54px;
+	overflow:hidden;
+	background:#fff;
+	display:none;
+}
+.header-div4>table{
+	margin:10px 0;
+	width:50%;
+	float:left;
+}
+.header-div4>table+table{
+	border-left:solid 1px #ccc;
+}
+header>.header-div4 th{
+	font-size:1.6rem;
+	text-align:center;
+	padding:10px;
+}
+header>.header-div4 td{
+	text-align:center;
+	padding:10px;
+}
+nav>div>ul>.nav-ul-1-none2{
+	display:none;
+}
+
+
+/*手机端*/
+@media only screen and (max-width: 768px){
+	.nav-ul-1-none1{
+		display:none;
+	}
+	nav>div>ul>.nav-ul-1-none2{
+	margin:0 2px 0 30px;
+	display:block;
+	}
+	.header>.header-div1{
+		width:100%;
+	}
+	.header>.header-div1>ul>li{
+		width:32%;
+	}
+	.homepage{
+		display:none;
+	}
+}
+
+.aaaa{
+	color:#F9FCF8;
+	font-size:1.5rem;
+}.aaaa:hover{
+		color:#fafafa;
+	background:#75b05a;
+}
+
+.my-nav-yuyan>div>.my-nav-yuyan-ul1{
+	margin-top:2%;
+}
+@media only screen and (max-width: 600px){
+	.my-nav-yuyan{
+		overflow:scroll;
+	}
+	.my-nav-yuyan>div>ul>li{
+		margin-left:30px;
+	}
+}
+@media only screen and (max-width: 440px){
+	.my-nav-sousuo>div>input{
+		width:60%;
+		font-size:2rem;
+	}
+}
+
+
+
+
+

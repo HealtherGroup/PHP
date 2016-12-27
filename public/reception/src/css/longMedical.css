@@ -1,0 +1,310 @@
+.box{
+	padding: 120px 0;
+}
+
+.medical{
+	margin: auto;
+	max-width: 1200px;
+	background: #F6F6F6;
+}
+
+
+.medical .head{
+	height: 50px;
+	padding: 0 5%;
+	line-height: 50px;
+	border-bottom: 1px solid #DADBDA;
+}
+
+.medical .head div{
+	float: left;
+	margin-right: 20px;
+}
+
+.medical .head div ul li{
+	color: #000000;
+	box-sizing: content-box;
+	padding-right: 16px;
+	background-repeat: no-repeat;
+	background-image: url(../iconfont3/li.png);
+	background-position: right center; 
+}
+
+.doc-video-warp{
+	padding: 60px 0 20px;
+}
+
+.doc{
+	box-sizing: border-box;
+	width: 25%;
+	float: left;
+	margin: auto;
+}
+
+.doc .doc-photo{
+	max-width: 100px;
+	max-height: 100px;
+	border-radius: 100px;
+	overflow: hidden;
+	background: #FFFFFF;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.doc span{
+	display:block;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #89C86D;
+	margin: auto;
+	margin-bottom: 20px;
+	border: 1px solid #89C86D;
+}
+
+.doc p{
+	margin: auto;
+	width: 80%;
+	color: #91948F;
+}
+
+
+.video-warp{
+	margin: auto;
+	float: left;
+	width: 50%;
+}
+
+.video-warp img{
+	width: 100%;
+	height: auto;
+}
+
+.report{
+	width: 25%;
+	float: left;
+	text-align: center;
+	color: #89C86D;
+}
+
+.report a{
+	border-radius: 8px;
+	display: inline-block;
+	line-height: 40px;
+	width: 80%;
+	background: #89C86D;
+	color: #FFFFFF;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+
+.consult-warp{
+	padding: 0px 0 60px;
+}
+
+.consult-warp .chat-box{
+	width: 50%;
+	margin: auto;
+	border: 1px solid #A1D38A;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.chat-box .record{
+	min-height: 200px; 
+	border-bottom: 1px solid #89C86D;
+}
+
+.chat-box .record .txt{
+	margin-top: 10px;
+	padding:10px 20px;
+	background: #89C86D;
+}
+
+.chat-box .record .record-item-left{
+	min-height: 60px;
+	padding-left: 80px;
+	position: relative;
+	margin: 20px;
+}
+
+.chat-box .record .record-item-left .photo{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 0px;
+	overflow: hidden;
+	border-radius: 60px;
+}
+
+.chat-box .record .record-item-left .txt{
+	float: left;
+}
+
+.chat-box .record .record-item-right{
+	padding-right: 80px;
+	position: relative;
+	margin: 20px;
+}
+
+.chat-box .record .record-item-right .photo{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	right: 0;
+	overflow: hidden;
+	border-radius: 60px;
+	min-height: 60px;
+}
+
+.chat-box .record .record-item-right .photo img{
+	width: 60px;
+	height: 60px;
+}
+
+.chat-box .record .record-item-right .txt{
+	float: right;
+	padding:10px 20px;
+	background: #FFFFFF;
+}
+
+.chat-box .in{
+	position: relative;
+}
+
+.chat-box .in .tool{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 32px;
+	line-height: 32px;
+	padding: 6px 20px;
+}
+
+.chat-box .in .tool span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+
+
+.chat-box .in .tool .exp{
+	background: url(../img/bq1.png) no-repeat center center;
+}
+
+.chat-box .in .tool .img{
+	background: url(../img/bq2.png) no-repeat center center;
+}
+
+.chat-box .in textarea{
+	resize: none;
+	text-indent: 20px;
+	padding: 0 20px 20px;
+	box-sizing: border-box;
+	padding-top: 44px;
+	display: inline-block;
+	width: 100%;
+	border: none;
+	background: #FFFFFF;
+	min-height: 160px;
+}
+
+.chat-box .in .send{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 32px;
+	line-height: 32px;
+	padding: 6px 20px;
+	text-align: right;
+}
+
+.chat-box .in .send span{
+	display: inline-block;
+	cursor: pointer;
+	width: 50px;
+	height: 30px;
+	border-radius: 30px;
+	background: #89C86D;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	.doc-video-warp{
+		padding: 30px 0 20px;
+	}
+	
+	.doc{
+		width: 80%;
+		float: none;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	
+	.doc p{
+		margin: auto;
+		width: 100%;
+		text-align: center;
+		color: #91948F;
+	}
+	
+	.video-warp{
+		margin: auto;
+		float: none;
+		width: 80%;
+		margin-bottom: 40px;
+	}
+	
+	.video-warp video{
+		width: 100%;
+		height: auto;
+	}
+	
+	.report{
+		width: 80%;
+		margin: auto;
+		float: none;
+	}
+	
+	.report .icon-txt{
+		width: 33.33%;
+		float: left;
+	}
+	
+	.report .button{
+		width: 66.66%;
+		float: left;
+	}
+	
+	.consult-warp .chat-box{
+		width: 80%;
+		margin: auto;
+		border: 1px solid #A1D38A;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+}
+
+
+@media only screen and (max-width: 480px){
+	.video-warp{
+		margin: auto;
+		float: none;
+		width: 90%;
+		margin-bottom: 40px;
+	}
+	
+	.consult-warp .chat-box{
+		width: 90%;
+		margin: auto;
+		border: 1px solid #A1D38A;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+}

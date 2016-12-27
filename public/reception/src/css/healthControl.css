@@ -1,0 +1,278 @@
+.user-head{
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.user-head img{
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+}
+
+.user-head .user-name{
+	font-size: 1.6rem;
+	margin-top: 20px;
+}
+
+/**/
+.user-warp{
+	max-width: 1200px;
+	margin: auto;
+	padding-bottom: 120px;
+}
+
+.user-warp .user-menu{
+	text-align: center;
+	/*height: 60px;*/
+	background-color: #FFFFFF;
+}
+
+.user-warp .user-menu ul li{
+	width: 120px;
+	line-height: 60px;
+	display: inline-block;
+}
+
+.user-warp .user-menu ul li:nth-child(2){
+	background: #89C86D;
+	color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+	.user-warp .user-menu ul li{
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.user-warp .user-menu ul li{
+		width: 100%;
+	}
+}
+
+/*健康管理的内容*/
+.hc-content{
+	max-width: 1200px;
+	margin: auto;
+	/*padding: 30px 0;*/
+	background: #FaFaFa;
+}
+
+.hc-content .status{
+	padding: 30px 50px;
+	text-align: center;
+	background: #FAFAFA;
+}
+
+.hc-content .status .status-item{
+	max-width: 768px;
+	margin: auto;
+}
+
+.hc-content .status .status-item+.status-item{
+	margin:30px auto auto;
+}
+
+.hc-content .status .status-item dl{
+	max-width: 270px;
+	float: left;
+	text-align: left;
+	display: inline-block;
+}
+
+.hc-content .status .status-item dl:nth-child(even){
+	float: right;
+}
+
+.hc-content .status .status-item dl dt{
+	float: left;
+}
+
+.hc-content .status .status-item dl dd{
+	float: left;
+	padding: 0;
+	margin-left: 2px;
+	color: #89C86D;
+}
+
+@media only screen and (max-width: 768px) {
+	.hc-content .status{
+		padding: 30px 30px;
+		text-align: center;
+		background: #FAFAFA;
+	}
+	
+	.hc-content .status .status-item{
+		text-align: center;
+	}
+	
+	.hc-content .status .status-item dl{
+		max-width: 100%;
+		width: 100%;
+	}
+	
+	.hc-content .status .status-item dl:nth-child(even){
+		float: none;
+	}
+	
+	.hc-content .status .status-item dl dt{
+		float: none;
+	}
+}
+
+/*日程计划*/
+.programme-head{
+	height: 60px;
+	line-height: 60px;
+	padding-left: 50px;
+	background: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+	.programme-head{
+		padding-left: 30px;
+	}
+	
+	.programme-head .dates{
+		width: 150px !important;
+	}
+
+}
+
+.programme-head .dates{
+	display: inline-block;
+	vertical-align: middle;
+	width: 200px ;
+	margin-left: 30px;
+}
+
+.programme-warp{
+	max-width: 768px;
+	width: 88%;
+	margin: auto;
+	padding: 60px 0;
+	background: #fafafa;
+}
+
+.programme-warp ul{
+	width: 280px;
+} 
+
+.programme-warp .programme-left{
+	float: left;
+}
+
+.programme-warp .programme-left ul li:nth-child(odd){
+	background: rgba(137,200,109,0.1);
+}
+
+.programme-warp .programme-right{
+	float: right;
+}
+
+.programme-warp .programme-right ul li:nth-child(odd){
+	background: rgba(137,200,109,0.1);
+}
+
+@media only screen and (max-width: 768px) {
+	.programme-warp .programme-left{
+		text-align: center;
+		float: none;
+	}
+	.programme-warp .programme-left ul{
+		display: inline-block;
+	}
+	.programme-warp .programme-right{
+		text-align: center;
+		float: none;
+	}
+	.programme-warp .programme-right ul{
+		display: inline-block;
+	}
+}
+
+/*营养配餐*/
+
+.food-head{
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: #FFFFFF;
+}
+
+	
+.food-warp{
+	padding: 30px 50px;
+	/*text-align: center;*/
+	background: #fafafa;
+}
+
+.food-item{
+	margin-left: 9%;
+	max-width: 800px;
+	padding: 30px 0;
+}
+
+.food-item .food-img{
+	float: left;
+	line-height: 0;
+	width: 41.66%;
+	display: inline-block;
+	box-sizing: border-box;
+	/*overflow: hidden;*/
+}
+
+.food-item .food-img img{
+	max-width: 90%;
+	border-radius: 8px;
+	box-shadow: 3px 3px 9px 1px rgba(71,76,69,0.3);
+}
+
+.food-warp  .food-info{
+	width: 58.33%;
+	padding-top: 24px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.food-item{
+		margin-left: 0;
+	}
+	
+	.food-item .food-img{
+		width: 100%;
+		/*text-align: center;*/
+	}
+	.food-item .food-img img{
+		max-width: 670px;
+		width: 70%;
+		/*width: 230px;*/
+		margin: auto;
+	}
+	.food-warp  .food-info{
+		width: 100%;
+	}
+	
+	.food-item{
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.food-item .food-img img{
+		width: 100%;
+	}
+	
+	.food-warp{
+		padding: 30px 30px;
+	}
+	
+	.food-item{
+		/*padding:0;*/
+		margin: 0;
+	}
+}

@@ -1,0 +1,324 @@
+/* ==========
+       	公共部分
+   ========== */
+*{
+	margin:0;
+	padding:0;
+	outline:none;
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+    cursor:pointer;
+    color:#474c4f;
+}
+a:hover {
+ 	text-decoration: none;
+	color:#89C86D;
+}
+::selection {
+	background-color: #b3d4fc;
+	text-shadow: none;
+}
+html{
+	font-size: 62.5%;
+	color:#474c4f;
+}
+body{
+	width:100%;
+	font-family: "Helvetica Neue",Arial,"Microsoft Yahei",Helvetica,sans-serif,Lato;
+    background:#fafafa;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	margin: 0 auto;
+	position: relative;
+	-moz-user-select:none;/*火狐*/
+
+	-webkit-user-select:none;/*webkit浏览器*/
+
+	-ms-user-select:none;/*IE10*/
+
+	-khtml-user-select:none;/*早期浏览器*/
+
+	user-select:none;
+}
+
+
+
+/* ==========
+        工具样式
+   ========== */
+.va-m{
+	vertical-align: middle;
+}
+
+.width-auto {
+	width: 100%;
+}
+
+.height-auto{
+	height: auto;	
+}
+.center-block {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.float-right {
+	float: right !important;
+}
+
+.float-left {
+	float: left !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+.hide {
+	display: none !important;
+}
+.show {
+	display: block !important;
+}
+.invisible {
+	/*将元素隐藏，但保留元素占位*/
+	visibility: hidden;
+}
+
+
+/*在研究研究*/
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+.block{
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.font-size12 {
+	font-size: 12px;
+}
+
+.f-s16{
+	font-size: 16px;
+}
+
+.area{
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+.shadow{
+	box-shadow: 0px 0px 8px 2px #ddd;
+}
+/*鼠标经过出现小手*/
+.pointer{
+	cursor: pointer;
+}
+/*绿色系背景*/
+.greenbg-1{
+	background-color: #89C86D;
+}
+
+.bg-cFFF{
+	background-color: #FFFFFF;
+}
+.bg-fa{
+	background:#fafafa;
+}
+.color-green{
+	color: #89C86D;
+}
+.color-fff{
+	color: #FFFFFF;
+}
+
+/*浅色系字体颜色*/
+.f-cFFF{
+	color: #FFFFFF;
+}
+.color-fa{
+	color:#fafafa;
+}
+/*单选框样式*/
+.radio{
+	width:20px;
+	height:20px;
+	background: url(../img/CheckBox.png) no-repeat;
+	background-position: 0px -20px;
+}
+
+.radio-active{
+	background: url(../img/CheckBox.png) no-repeat;
+	background-position: 0px 0px;
+}
+.border-0{
+	border:0;
+}
+
+.overflow-h{
+	overflow:hidden;
+}
+.color-green{
+	color:#89C86D;
+}
+.color-red{
+	color:red;
+}
+.underline{
+	width:60%;
+	margin:0 auto;
+	border-bottom:2px solid #89C86D;
+}
+@media only screen and (max-width: 768px){
+	.max-width-768-none{
+		display:none !important;
+	}
+	.max-width-768-block{
+		display:block !important;	
+	}
+	.max-768-text-top{
+		text-align:top !important;
+	}
+	.max-768-width-auto{
+		width:100%;
+	}
+}
+.padding-30{
+	padding:30px;
+}
+.padding-20{
+	padding:20px;
+}
+.padding-10{
+	padding:10px;
+}
+.padding-15{
+	padding:15px;
+}
+.padding-5{
+	padding:5px;
+}
+.padding-bottom-5{
+	padding-bottom:5px;
+}
+.padding-bottom-10{
+	padding-bottom:10px;
+}
+.padding-bottom-40{
+	padding-bottom:40px;
+}
+.padding-0-10{
+	padding:0 10px;
+}
+.padding-0-20{
+	padding:0 20px;
+}
+.margin-10{
+	margin:10px;
+}
+.margin-20{
+	margin:20px;
+}
+.margin-30{
+	margin:30px;
+}
+.margin-left-10{
+	margin-left:10px;
+}
+.margin-top-10{
+	margin-top:10px;
+}
+.margin-top-20{
+	margin-top:20px;
+}
+.margin-top-30{
+	margin-top:30px;
+}
+.margin-bottom-8{
+	margin-bottom:8px;
+}
+.margin-bottom-10{
+	margin-bottom:10px;
+}
+.margin-bottom-20{
+	margin-bottom:20px;
+}
+.margin-left-10px{
+	margin-left:10px;
+}
+.color-777{
+	color:#999;
+}
+.border-bottom-10-CCC{
+	border-bottom:#ECEDEC solid 10px;
+}
+.width-90-auto{
+	width:90%;
+	margin:0 auto;
+}
+.margin-auto{
+	margin:0 auto;
+}
+/*.close{
+	padding:20px;
+	background:#89C86D;
+	color:#fafafa;
+}*/
+.line-height-14{
+	line-height:14px;
+}
+.background-89-color-fa{
+	background:#89C86D;
+	color:#fafafa;
+}
+.background-f{
+	background:#FFF !important;
+}
+.font-size-3r{
+	font-size:3rem;
+}
+.border-bottom-1-s-C{
+	border-bottom:1px solid #CCC;
+}
+.font-size-1-rem{
+	font-size:1rem;
+}
+.font-size-1-5-rem{
+	font-size:1.5rem;
+}
+.font-size-2-rem{
+	font-size:2rem;
+}
+.font-size-3-rem{
+	font-size:3rem;
+}
+
+
+
+.zwq-shadow{
+	transition: box-shadow 0.5s;
+}
+.zwq-shadow:hover{
+	box-shadow: 0px 0px 8px 2px #ddd;
+}

@@ -1,0 +1,8 @@
+
+/* 请登录 */
+#qingdenglu{border:2px solid #93C17B;height:200px;overflow:hidden;}
+#qingdenglu .img-suc{padding:5% 4%;float: left;width:20%;}
+#qingdenglu .img-wrap{display:inline-block;float:left;padding-top:5%;}
+#qingdenglu .img-wrap p:first-child{padding-top:5%;color:#464845;font-size:100%;}
+#qingdenglu .img-wrap p{color:#666666;font-size:5%;}
+/* 请登录 end*/

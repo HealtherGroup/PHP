@@ -1,0 +1,209 @@
+/*订单部分*/
+.Account-body{
+	overflow:hidden;
+	background:#ECEDEC;
+}
+.Account-body-header{
+	padding:46px 0;	
+}
+.Account-body-nav{
+	line-height:58px;
+	background:#fff;
+	text-align:center;
+	overflow:visible;
+	margin-bottom:20px;
+}
+.Account-body-nav ul{
+	margin-bottom:0;
+}
+.Account-body-nav-div1{
+	width:60%;
+	margin:0 auto;
+	border-bottom:2px solid #89C86D;
+}
+.Account-order-nav{
+	color:#fff;
+	background:#89C86D;
+}
+.Account-order-nav span{
+	font-size:1.4rem;
+	padding:14px 50px;
+}
+.zwq-active{
+	background:#fff;
+	color:#89C86D;
+}
+.Account-body-main{
+	margin-bottom:20px;
+	background:#fff;
+	
+}
+.Account-body-main th{
+	padding:14px 50px;
+	text-align:center;
+}
+.Account-body-main-See{
+	max-width:100px;
+	line-height:30px;
+	color:#89C86D;
+	background:#fff;
+	margin:20px;
+	border:1px solid #89C86D;
+}
+.Account-body-main-See:hover{
+	color:#fff;
+	background:#89C86D;
+	border:1px solid #89C86D;
+}
+.Account-body-main-delete{
+	color:red;
+}
+.Account-body-main-delete:hover{
+	color:red;
+}
+.Account-body-main-See-div{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0);
+	display:none;
+	padding-top:100px;
+}
+.Account-body-main-See-div>div{
+	margin:0 auto;
+	width:61.8%;
+	min-height:61.8%;
+	background:#fff;
+	display:none;
+}
+.Account-body-main-evaluate{
+	max-width:100px;
+	line-height:30px;
+	color:#89C86D;
+	background:#fff;
+	border:1px solid #89C86D;
+}
+.Account-body-main-evaluate:hover{
+	color:#fff;
+	background:#89C86D;
+	border:1px solid #89C86D;
+}
+.Account-body-main-payment{
+	max-width:100px;
+	line-height:30px;
+	color:#89C86D;
+	background:#fff;
+	border:1px solid #89C86D;
+}
+.Account-body-main-payment:hover{
+	color:#fff;
+	background:#89C86D;
+	border:1px solid #89C86D;
+}
+
+
+
+
+
+
+
+
+
+
+/*账户信息部分*/
+.Account-body-data-main{
+	background:#fff;
+}
+.Account-body-data-main-line{
+	width:80%;
+	margin: 40px auto;
+	border:1px solid #ccc;
+}
+.Account-body-data-main>form>input{
+	border:0;
+	background-color:#ccc;
+}
+.Account-body-data-main-submit{
+	background:#fff !important;
+	color:#89C86D;
+}
+
+
+
+
+
+
+
+
+/*用户地址添加*/
+.Account-body-address-main{
+	background:#fff;
+}
+.Account-body-address-main-div{
+	margin-top:10px;
+	border:1px solid #89C86D;
+}
+.Account-body-address-main-div>input{
+	border:0;
+	padding:4px;
+}
+.Account-body-address-main-div-close{
+	font-size:1.4rem;
+}
+.Account-body-address-main-div b{
+	font-size:2rem;
+}
+.Account-body-address-main-div-edit{
+	float:right;
+	font-size:1.4rem;
+}
+.Account-address-button{
+	border:0;
+	margin-right:10px;
+	background:#fff;
+}
+.increase-address:hover{
+	color:#fafafa;
+}
+
+
+
+@media only screen and (max-width: 768px){
+	.Account-body-nav-div1{
+		border-bottom:2px solid #fff;
+	}
+	.Account-order-nav>span{
+		text-align:center;
+		width:100%;
+	}
+}
+
+
+
+
+
+
+
+
+/*支付成功*/
+.payment-succeed{
+	width:61.8%;
+	height:61.8%;
+	margin:10% auto;
+	border:3px solid #89C86D;
+	overflow:hidden;
+	padding:60px;
+}
+.payment-succeed-duihao{
+	font-size:7rem;
+	margin-right:60px;
+}
+.Account-body-address-main-form{
+	min-width:460px;
+	min-height:326px;
+	background:cyan;
+	margin:0 auto;
+}
+

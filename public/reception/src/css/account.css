@@ -1,0 +1,217 @@
+.user-head{
+	max-width: 1200px;
+	width: 92%;
+	margin: auto;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.user-head img{
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+}
+
+.user-head .user-name{
+	font-size: 1.6rem;
+	margin-top: 20px;
+}
+
+/**/
+.user-warp{
+	max-width: 1200px;
+	width: 92%;
+	margin: auto;
+	padding-bottom: 120px;
+}
+
+.user-warp .user-menu{
+	text-align: center;
+	background: #FFFFFF;
+	border-bottom: 1px solid #ECEDEC;
+	margin-bottom: 18px;
+}
+
+
+
+.user-warp .user-menu ul li{
+	width: 100px;
+	line-height: 60px;
+	display: inline-block;
+}
+
+.user-warp .user-menu ul li+li{
+	line-height: 60px;
+	display: inline-block;
+}
+
+
+/*用户管理信息*/
+.account-warp{
+	max-width: 1200px;
+	margin: auto;
+	background: #fff;
+	padding-bottom: 60px;
+}
+
+.account-list{
+	border-bottom: 1px solid #ECEDEC;
+}
+
+.account-list ul{
+	width: 100%;
+	float: left;
+}
+
+.account-list ul li{
+	width: 90px;
+	margin-left: 20px;
+	cursor: pointer;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	line-height: 45px;
+}
+
+/*用户资料*/
+.account-warp .data{
+	max-width: 500px;
+	padding: 30px 0;
+	margin: auto;
+	color: #000;
+	padding-left: 20px;
+}
+
+.account-warp .cap{
+	line-height: 60px;
+	height: 60px;
+}
+
+.account-warp .cap img{
+	vertical-align: middle;
+}
+
+.account-warp .cap span{
+	width: 70px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.touxiang{
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+}
+
+
+
+
+.data ul li{
+	margin-top: 20px;
+}
+
+.data ul li span{
+	display: inline-block;
+	width: 70px;
+}
+
+.data ul li input{
+	width: 210px;
+	box-sizing: border-box;
+	border: 1px solid #89C86D;
+	padding: 0;
+	margin: 0;
+	height: 27px;
+	background: rgba(137,200,109,0.1);
+}
+
+.data ul .li-sex input{
+	height: 0;
+	line-height: 0;
+	width: 0;
+}
+
+.data ul .li-sex label+label{
+	margin-left: 20px;
+}
+
+.data ul li .i{
+	width: auto;
+	color: rgb(255,0,0);
+}
+
+.data ul .button input{
+	width: 80px;
+	height: 38px;
+	background: #89C86D;
+	color: #FFFFFF;
+	float: right;
+}
+
+
+/*健康数据*/
+.health-data{
+	margin: auto;
+	max-width: 500px;
+	margin-top: 60px;
+}
+
+.health-data ul li{
+	margin-bottom: 20px;
+}
+
+
+.health-data ul li span{
+	display: inline-block;
+	width: 33.33%;
+}
+
+.health-data ul li input{
+	width: 210px;
+	box-sizing: border-box;
+	border: 1px solid #89C86D;
+	padding: 0;
+	margin: 0;
+	height: 27px;
+	text-indent: 20px;
+	color: #6C706A;
+	background: rgba(137,200,109,0.1);
+}
+
+.health-data ul li .radio{
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+
+
+.health-data ul .BWH input{
+	width: 67px;
+}
+
+.health-data ul .ask .radio{
+	display: inline-block;
+	width: 8.33%;
+}
+
+.health-data ul .ask .radio span{
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #89C86D;
+}
+
+.health-data ul .ask .ask-text{
+	width: 91.66%;
+	float: right;
+}
+
+.health-data ul .button input{
+	text-indent: 0;
+	width: 80px;
+	height: 38px;
+	background: #89C86D;
+	color: #FFFFFF;
+	float: right;
+	margin-top: 30px;
+}

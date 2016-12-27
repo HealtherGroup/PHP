@@ -1,0 +1,438 @@
+/*网格视图*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+	box-sizing: border-box;
+}
+
+/*步骤*/
+.procedure{
+	box-sizing: content-box;
+	padding: 50px 0 0;
+	max-width: 1000px;
+	width: 90%;
+	height: 120px;
+}
+
+.procedure .flow{
+	border-bottom: 2px solid #C7C9C7;
+	font-size: 16px;
+	color: #C7C9C7;
+	height: 40px;
+}
+
+.procedure .flow div{
+	text-align: center;
+	height: 40px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+
+.procedure .flow div span{
+	display: inline-block;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	margin: auto;
+	bottom: -4px;
+	left: 0;
+	right: 0;
+	background: #C7C9C7;
+}
+
+.procedure .flow .flow-active{
+	color: #89C86D;
+	border-bottom: 2px solid #89C86D;
+}
+
+.procedure .flow .flow-active span{
+	background: #89C86D;
+	bottom: -6px;
+}
+
+/*清单*/
+.bill{
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.col-015{
+	width: 15%;
+}
+
+.col-005{
+	width: 5%;
+}
+
+/*清单表头*/
+.bill-head{
+	width: 100%;
+	height: 50px;
+	background-color: rgb(71,76,69);
+	/*padding: 0 5%;*/
+	/*padding-left: 5%;*/
+	padding:0 2.5%;
+	color: #ECEDEC;
+}
+
+.bill-head div{
+	line-height: 50px;
+	font-size: 1.2rem;
+}
+
+.bill-head li{
+	display: inline-block;
+	font-size: 1.2rem;
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	/*color: #ECEDEC;*/
+	float: left;
+}
+
+.bill-head li+li{
+	text-align: center;
+}
+
+.bill-head li span{
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+
+/*清单条目*/
+.item-box{
+	width: 100%;
+	background-color: #FFFFFF;
+	padding:0 2.5%;
+}
+
+.item-box .img{
+	height: 133px;
+	line-height: 133px;
+	float: left;
+	border-bottom: 1px solid #DADBDA;
+}
+
+.item-box .img img{
+	width: 100px;
+	height: 100px;
+	vertical-align: middle;
+}
+
+.checkbox{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+.cart-item{
+	float: left;
+	height: 133px;
+	border-bottom: 1px solid #DADBDA;
+}
+
+.cart-item>li{
+	float: left;
+	display: inline-block;
+	line-height: 133px;
+}
+
+.cart-item li+li{
+	text-align: center;
+}
+
+.cart-item .name{
+	/*text-align: left;*/
+}
+
+.cart-item .name a{
+	font-size: 1.6rem;
+}
+
+.cart-item .price{
+	font-size: 1.5rem;
+}
+
+/*quantity-产品的数量*/
+
+.cart-item .quantity .quantity-change{
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0 auto;
+	width: 85px;
+	height: 25px;
+	border: 1px solid #DFDFDF;
+}
+
+.quantity-change{
+	text-align: center;
+	line-height: 0;
+	position: relative;
+}
+
+.quantity-change span{
+	display: inline-block;
+	line-height: 23px;
+}
+
+.quantity-minus,.quantity-plus{
+	cursor: pointer;
+	width: 23px;
+	height: 23px;
+	color: #B5B7B5;
+}
+
+.quantity-minus{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.quantity-plus{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.cart-item .close{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	background: url(../iconfont/p-close.png) no-repeat;
+}
+
+.item-box:nth-last-child(2) .img{
+	border: none;
+}
+
+.item-box:nth-last-child(2) ul{
+	border: none;
+}
+
+.item-box:nth-last-child(2){
+	border-bottom: 1px solid #DADBDA;
+}
+
+@media only screen and (max-width: 1240px) {
+	.bill{
+		margin: 0 auto;
+		width: 96.09375%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.bill{
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	.bill-head li{
+		display: none;
+	}
+	
+	.item-box{
+		border-bottom: 1px solid #DADBDA;
+		padding: 15px 5% 13px 5%;
+	}
+	
+	.item-box .img{
+		width: 33.33%;
+		height: auto;
+		border: none;
+		line-height: 1;
+	}
+	
+	.item-box .img img{
+		width: 80px;
+		height: 80px;
+	}
+	
+	.cart-item{
+		width: 66.66%;
+		height: auto;
+		position: relative;
+		border-bottom: none;
+	}
+	
+	.cart-item li{
+		width: 100%;
+		display: inline-block;
+		line-height: 1.4;
+		text-align: left;
+	}
+	
+	.cart-item li+li{
+		text-align: left;
+	}
+	
+	
+	.cart-item .name{
+		/*padding: 2px 0;*/
+	}
+	
+	.cart-item .name a{
+		font-size: 1.4rem;
+	}
+	
+	.cart-item .price-box{
+		margin-bottom: 10px;
+	}
+	
+	.cart-item .quantity{
+		padding-top: 15px;
+		border-top: 1px solid #DADBDA;
+		width: 50%;
+	}
+	
+	.cart-item .subtotal{
+		padding-top: 15px;
+		border-top: 1px solid #DADBDA;
+		width: 50%;
+		line-height: 25px;
+		text-align: right;
+	}
+	
+	
+	.cart-item .close-box{
+		width: auto;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.item-box .img img{
+		width: 66px;
+		height: 66px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.item-box{
+		padding: 15px 2.5% 13px 2.5%;
+	}
+}
+
+/*商品结算*/
+.cart-total{
+	width: 100%;
+	background-color: #FFFFFF;
+	padding:10px 5% 30px;
+}
+
+
+.selective {
+	background: #FFFFFF;
+	line-height: 50px;
+	padding: 0 2.5%;
+}
+
+.selective .all{
+	margin-right: 10px;
+	border-radius: 0;
+	width: 16px;
+	height: 16px;
+}
+
+.selective input{
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+.selective label{
+	vertical-align: middle;
+}
+
+.selective span{
+	cursor:pointer;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.cart-total .goods-num{
+	float: left;
+	color: #91948F;
+	font-size: 1.2rem;
+	margin-top: 10px;
+	line-height: 1.4rem;
+}
+
+.cart-total>.goods-num>span{
+	color: #474C45;
+	font-size: 1.4rem;
+	vertical-align: top;
+}
+
+/*继续购物,去结算*/
+.cart-total .go-on{
+	width: 100%;
+	padding-top: 10px;
+}
+
+.cart-total .go-on a{
+	display: inline-block;
+	text-align: center;
+	float: left;
+	width: 48%;
+	height: 48px;
+	line-height: 48px;
+	border: 1px solid #B5B7B5;
+}
+
+.cart-total .go-on a+a{
+	margin-left: 4%;
+	background-color: #89C86D;
+	color: #FFFFFF;
+}
+
+.cart-total .go-on .add{
+	margin: 0;
+	width: 100%;
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.cart-total .total-info{
+		width: 100%;
+	}
+	
+	.cart-total{
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.cart-total .go-on a{
+		
+		width: 100%;
+	}
+	
+	.cart-total .go-on a+a{
+		margin: 0;
+		margin-top: 10px;
+	}
+}
+
+.bill{
+	margin-bottom: 120px;
+}

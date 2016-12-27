@@ -1,0 +1,39 @@
+.navbar .my_input{width: 260px;margin:15px 25px 0 0;}
+/* 导航 搜索框*/
+.my_nav_wrap{background: #FFF;}
+.my_navbar>ul>li>a{padding-top:25px;padding-bottom: 15px;color:#000;} 
+.navbar-brand{padding-top: 0px;}
+.navbar-default .navbar-nav > li > a {color:#000;}
+.navbar-default .navbar-nav > li > a:hover{background: #09c;}
+.my_play{margin-top: 61px;width: 100%;}
+#my_fenlei{margin:10px 0 10px 0;}
+#my_fenlei button{margin: 5px;}
+.my_btn_wrap{width: 800px;height:50px; margin: 0 auto;}
+#my_tu_class img{width: 100%;}
+.my_bo{margin-top: 20px;}
+.my_bo h3{margin:80px 0 20px 0; }
+.my_bo p{color:#777777;margin: 0;}
+.my_bo button{margin-top: 30px;}
+.huojian{margin-top:60px;}
+.huojian h3{font-size: 30px;margin-top: 100px;}
+.huojian p{font-size: 20px;margin-top: 30px;}
+
+
+ul li{list-style: none;}
+#bg{background:#EDEDED;}
+#nicheng{width:50px;height:50px;border-radius:50%;background:#000;margin:0 auto;}
+#nav{background:white;}
+#nav ul{margin-left: 30%;}
+#nav ul li a:hover{background: #89C86D;}
+#ziliao{background:white;margin-top:2%;}
+#ziliao .img-out{padding-left:15%;}
+#ziliao .img-out #img{width: 50px;height: 50px;border-radius: 50%;background: #000;margin-left:10%}
+#zhuyi{color:red;}
+
+/* 支付结果 */
+#xiangqing{border:2px solid #93C17B;height:200px;overflow:hidden;}
+#xiangqing .img-suc{padding:5% 4%;float: left;width:20%;}
+#xiangqing .img-wrap{display:inline-block;float:left;padding-top:5%;}
+#xiangqing .img-wrap p:first-child{padding-top:5%;color:#464845;font-size:100%;}
+#xiangqing .img-wrap p{color:#666666;font-size:5%;}
+/* 支付结果 end*/

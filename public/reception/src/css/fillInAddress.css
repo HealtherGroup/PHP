@@ -1,0 +1,62 @@
+
+
+.warp{
+	margin: 60px auto;
+	background: #FFFFFF;
+	
+	border: 1px solid #DADBDA;
+}
+
+.head{
+	padding: 0 5%;
+}
+
+.fill-warp{
+	padding: 30px 5%;
+}
+
+
+input[type="checkbox"] {
+  margin: 3px 3px 0px 5px;
+  display: none;
+}
+
+.label{
+	cursor: pointer;
+	position: relative;
+	padding-left: 24px;
+}
+
+/*选中后的样式*/
+.label-before:before{
+	position: absolute;
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/CheckBox.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 -20px;
+	margin: auto;
+	top: 50%; left: 0%;  
+  	-webkit-transform: translate(0%,-50%);  
+    -ms-transform: translate(0%,-50%);  
+    transform: translate(0%,-50%);  
+}
+
+/*选中前的样式*/
+.label-after:after{
+	position: absolute;
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/CheckBox.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 0px;
+	margin: auto;
+	top: 50%; left: 0%;  
+  	-webkit-transform: translate(0%,-50%);  
+    -ms-transform: translate(0%,-50%);  
+    transform: translate(0%,-50%);  
+}

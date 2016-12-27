@@ -1,0 +1,354 @@
+/**********
+ *页面样式*
+ **********/
+/* ==========
+   基本默认值
+   ========== */
+html {
+  font-size: 62.5%;
+  color: #222;
+}
+::selection {
+  background-color: #b3d4fc;
+  text-shadow: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+p{
+	padding: 0;
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+th{
+	font-weight: normal;
+}
+hr{
+	border-color: rgba(252,252,252,0.3);
+	padding: 0;
+	margin: 0;
+}
+
+/* ==========
+   工具样式
+   ========== */
+  
+.width-auto{
+    width: 100%;
+}
+
+.center-block{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pull-right{
+    float: right !important;
+}
+
+.pull-left{
+    float: left !important;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block !important;
+}
+
+.invisible{
+    /*将元素隐藏，但保留元素占位*/
+    visibility: hidden;
+}
+
+.text-hide{
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+.clearfix{
+    /*IE6 and IE7*/
+    zoom: 1;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.font-size12{
+	font-size: 12px;
+}
+
+/*-------分割线-------*/
+
+body{
+	font-size: 1.2rem;/*12px*/
+    line-height: 1.4;
+    background-color: #fcfcfc;
+	position: relative;
+	background-color: #FFF;
+}
+
+a{
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover,a:active{
+    color: #4D4D4D;
+    text-decoration: none;
+}
+
+
+header {
+  margin: 0 auto;
+  width: 100%;
+  /*height: 860px;*/
+  overflow: hidden;
+  position: relative;
+  line-height: 1;
+}
+header .top {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  line-height: 5.2rem;
+  width: 100%;
+}
+#slogan {
+  width: 0px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 22%;
+  left: 0;
+  right: 0;
+}
+@media only screen and (max-width: 50em) {
+  #slogan {
+    width: 39.73% !important;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 22%;
+    left: 0;
+    right: 5%;
+  }
+}
+header .top .logo {
+  margin-left: 23%;
+  margin-right: 2%;
+  float: left;
+}
+@media only screen and (max-width: 62.5em) {
+  header .top .logo {
+    margin-left: 10%;
+    float: left;
+  }
+}
+header .top ul {
+  text-align: left;
+}
+header .top ul li {
+  display: inline-block;
+  position: relative;
+  width: 95px;
+  text-align: center;
+}
+header .top ul li span {
+  position: absolute;
+  bottom: 9px;
+  left: 23%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 6px;
+}
+header .top ul li a {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+header .top ul li a:hover {
+  color: #ffffff;
+}
+header .top .user {
+  height: 5.2rem;
+  line-height: 5.2rem;
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: 10%;
+}
+header .top .user a {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+header .top .user a:hover {
+  color: #ffffff;
+}
+header .top .user span {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.drift {
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+}
+
+.drift p{
+	margin-bottom: 22px;
+}
+
+#off{
+	cursor: pointer;
+	position: absolute;
+	font-size: 30px;
+	top: 0;
+	right: 12px;
+}
+
+.Next{
+	position: absolute;
+	margin: auto;
+	right: -22px;
+	top: 100px;
+	bottom: 0;
+	z-index: 1;
+	text-decoration: underline;
+}
+
+.login-case {
+  width: 498px;
+  height: 255px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 146px auto;
+  position: relative;
+  font-size: 1.4rem;
+}
+.login-case img {
+  margin-top: 23px;
+}
+.login-case input {
+  width: 198px;
+  height: 32px;
+  font-size: 12px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  border-width: 0 0 1px 0;
+  border-color: #707070;
+  background-color: rgba(255, 255, 255, 0);
+  color: #8F8F8F;
+  text-align: center;
+}
+.login-case input:focus {
+  color: #000000;
+}
+
+.login-case div {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.login-case div a + a {
+  float: right;
+}
+.login-case a {
+  color: #8E8F8F;
+  text-decoration: none;
+  display: inline-block;
+  height: 18px;
+  margin-top: 3px;
+}
+.login-case .enroll {
+  margin-top: 12px;
+  width: 32px;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+.login-case:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  border-style: solid;
+  border-width: 113px 70px;
+  border-color: transparent rgba(255, 255, 255, 0.9) transparent transparent;
+  bottom: 0;
+  left: -28%;
+}
+.login-case:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  border-style: solid;
+  border-width: 113px 70px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.9);
+  top: 0;
+  right: -28.2%;
+}
+@media only screen and (max-width: 50em) {
+  .login-case {
+    width: 249px;
+    height: 254px;
+    background: #FFF;
+    margin: 100px auto;
+    position: relative;
+  }
+  .login-case:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    border-style: solid;
+    border-width: 56.5px 35px;
+    border-color: transparent #FFF transparent transparent;
+    bottom: 0;
+    left: -28%;
+  }
+  .login-case:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    border-style: solid;
+    border-width: 56.5px 35px;
+    border-color: transparent transparent transparent #FFF;
+    top: 0;
+    right: -28%;
+  }
+}

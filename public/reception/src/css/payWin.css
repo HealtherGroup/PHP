@@ -1,0 +1,45 @@
+.cue{
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.win-txt{
+	font-size: 24px;
+}
+
+.num{
+	font-size: 16px;
+	line-height: 40px;
+}
+
+.sum{
+	font-size: 14px;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+
+
+button{
+	width: 140px;
+	line-height: 40px;
+	background: #FFFFFF;
+	border: 1px solid #6C706A;
+	color: #6C706A;
+}
+
+button+button{
+	margin-left: 20px;
+
+}
+
+.warp{
+	box-sizing: border-box;
+	max-width: 768px;
+	background-color: #FFFFFF;
+	border: 1px solid #DADBDA;
+	margin: auto;
+	margin-bottom: 60px;
+	padding: 0 2.5%;
+}
+

@@ -1,0 +1,73 @@
+/*网格视图*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+	box-sizing: border-box;
+}
+
+.warp{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	
+}
+
+
+
+.border{
+	border: 1px solid #DADBDA;
+}
+
+.input{
+	display: block;
+	line-height: 40px;
+	border-radius: 8px;
+	border: 1px solid #DADBDA;
+	text-indent: 20px;
+	margin-bottom: 10px;
+}
+
+form .bold{
+	display: inline-block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.remark{
+	color: #91948F;
+	font-weight: normal;
+}
+
+
+.submit{
+	margin: 20px 0;
+	float: right;
+	display: inline-block;
+	width: 140px;
+	line-height: 40px;
+	background: #89C86D;
+	color: #FFFFFF;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.input{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.submit{
+		width: 100%;
+	}
+}

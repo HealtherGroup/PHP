@@ -1,0 +1,214 @@
+//颜色
+@color0:#474C45;
+@color1:#89C86D;
+@bgcolor:#ECEDEC;
+
+//宽度
+@max1200:1200px;
+@pc100:100%;
+
+//网格视图
+@col-1: 8.33%;
+@col-2: 16.66%;
+@col-6: 50%;
+
+.warp{
+    background-color: @bgcolor;
+    .p-tb(50px,50px);
+}
+
+
+@padding50:50px;
+
+
+
+.p-tb(@px,@px){
+    padding-top: @px;
+    padding-bottom: @px;
+}
+
+.max-w1200{
+    max-width: @max1200;
+    width: 90%;
+    margin: auto;
+}
+
+
+.doctorinfo{
+//  border: 1px solid #DADBDA;
+    padding: 35px 0;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+//  border-radius: 8px;
+    overflow: hidden;
+    
+    
+    .left{
+        width: @col-6;
+        text-align: center;
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+            box-shadow: 0 3px 30px -3px #B5B7B5;
+        }
+        p{  
+            
+            width: 200px;
+            margin: auto;
+            margin-top: 20px;
+            span{
+                display: inline-block;
+                width: 48%;
+            }
+            .name{
+                font-size: 16px;
+            }
+        }
+    }
+    .right{
+        width: @col-6;
+        
+        .title{
+            width: 200px;
+            margin-bottom: 10px;
+            
+            span{
+                text-align: center;
+                display: inline-block;
+            }
+            
+            .name{
+                font-size: 1.6rem;
+            }
+            
+            .fg{
+                margin: 0 20px;
+                vertical-align: top;
+            }
+        }
+        
+        .sections{
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .label{
+            margin-bottom: 10px;
+            
+            a{
+                display: inline-block;
+                padding: 4px;
+                background: #E7F4E2;
+                color: #89C86D;
+                margin-right: 2px;
+            }
+        }
+    }
+}
+
+
+.order{
+    .doctorinfo;
+    padding: 0;
+    margin-bottom: 50px;
+    
+    .head{
+        height: 50px;
+        line-height: 50px;
+        padding: 0 5%;
+        border-bottom: 1px solid #DADBDA;
+    }
+    
+    .option{
+        padding: 20px 5%;
+    } 
+    
+    table{
+        border-collapse:collapse;
+    }
+    table,th,td{
+        border: 1px solid #DADBDA;
+    }
+    th,td{
+        padding: 4px;
+    }
+}
+
+
+//患者评价
+.evaluate{
+    .order;
+    
+    .head{
+        
+    }
+    
+    .item{
+        padding: 20px 5%;
+        
+        .head-name{
+            width: 120px;
+            text-align: center;
+            float: left;
+            
+            img{
+                width: 70px;
+                height: 70px;
+                border-radius: 100px;
+                margin-bottom: 5px;
+            }
+        }
+        
+        .txt{
+            padding: 5px 0;
+        }
+        
+        .time{
+            .txt;
+        }
+    }
+    
+    .more{
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-top: 1px solid #DADBDA;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .doctorinfo{
+        padding-left: 5%;
+        padding-right: 5%;
+        
+        
+        .left{
+            width: 100%;
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 150px;
+                margin-bottom: 20px;
+            }
+        }
+        .right{
+            width: 100%;
+        }
+    }
+    
+    .evaluate{
+    
+        .item{
+            padding: 20px 5%;
+            
+            .head-name{
+                width: 100px;
+                text-align: center;
+                float: left;
+                
+            }
+        }
+    }
+}

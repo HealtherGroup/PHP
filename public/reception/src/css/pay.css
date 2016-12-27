@@ -1,0 +1,144 @@
+/*网格视图*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+	box-sizing: border-box;
+}
+
+.shadow{
+	box-shadow: 0 0 30px -6px rgba(71,76,69,.2);
+}
+
+/*步骤*/
+.procedure{
+	box-sizing: content-box;
+	padding: 50px 0 0;
+	max-width: 1000px;
+	width: 90%;
+	height: 120px;
+}
+
+.procedure .flow{
+	border-bottom: 2px solid #C7C9C7;
+	font-size: 16px;
+	color: #C7C9C7;
+	height: 40px;
+}
+
+.procedure .flow div{
+	text-align: center;
+	height: 40px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+
+.procedure .flow div span{
+	display: inline-block;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	margin: auto;
+	bottom: -4px;
+	left: 0;
+	right: 0;
+	background: #C7C9C7;
+}
+
+.procedure .flow .flow-active{
+	color: #89C86D;
+	border-bottom: 2px solid #89C86D;
+}
+
+.procedure .flow .flow-active span{
+	background: #89C86D;
+	bottom: -6px;
+}
+/*步骤结束*/
+
+
+
+/*支付方式*/
+.payment ul li{
+	display: inline-block;
+	float: left;
+}
+
+.payment ul li+li{
+	margin-left: 20px;
+}
+
+.pay-no{
+	border: 1px solid #DADBDA;
+}
+
+.pay-active{
+	border: 1px solid #89C86D;
+}
+
+.i-pay{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+
+/****************/
+.alipay{
+	background: url(../img/bank.png) no-repeat;
+	background-size: 100%;
+	background-position: 0px -2120px;
+}
+
+.wxpay{
+	background: url(../img/wxpay.png) center center no-repeat;
+	background-size: 100%;
+}
+
+/*支付信息*/
+.info p{
+	line-height: 40px;
+}
+
+
+/*支付按钮*/
+
+.pay-txt{
+	display: inline-block;
+}
+
+.pay-btn{
+	display: inline-block;
+	color: #FFFFFF;
+	background: #89C86D;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.payment ul li{
+		display: block;
+		float: none;
+		margin-bottom: 20px;
+	}
+	
+	.payment ul li+li{
+		margin: 0;
+	}
+	
+	.pay-txt{
+		float: left;		
+	}
+	
+}

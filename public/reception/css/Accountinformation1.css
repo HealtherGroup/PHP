@@ -1,0 +1,286 @@
+
+
+
+
+/*订单部分*/
+.Account-body{
+	overflow:hidden;
+	background:#ECEDEC;
+}
+.Account-body-header{
+	padding:46px 0;	
+}
+.Account-body-nav{
+	line-height:58px;
+	background:#fff;
+	text-align:center;
+	overflow:visible;
+	margin-bottom:20px;
+}
+.Account-body-nav ul{
+	margin-bottom:0;
+}
+.Account-body-nav-div1{
+	width:60%;
+	margin:0 auto;
+	border-bottom:2px solid #89C86D;
+}
+.Account-order-nav{
+	color:#fff;
+	background:#89C86D;
+}
+.Account-order-nav span{
+	font-size:1.4rem;
+	padding:14px 50px;
+}
+.zwq-active{
+	background:#fff;
+	color:#89C86D;
+}
+.Account-body-main{
+	margin-bottom:20px;
+	background:#fff;
+	
+}
+.Account-body-main th{
+	padding:14px 50px;
+	text-align:center;
+}
+.Account-body-main-See{
+	max-width:100px;
+	line-height:30px;
+	color:#89C86D;
+	background:#fff;
+	margin:20px;
+	border:1px solid #89C86D;
+}
+.Account-body-main-See:hover{
+	color:#fff;
+	background:#89C86D;
+	border:1px solid #89C86D;
+}
+.Account-body-main-delete{
+	color:red;
+}
+.Account-body-main-delete:hover{
+	color:red;
+}
+.Account-body-main-See-div>div{
+	margin:0 auto;
+	width:61.8%;
+	min-height:61.8%;
+	background:#fff;
+}
+.Account-body-main-evaluate{
+	max-width:100px;
+	line-height:30px;
+	color:#89C86D;
+	background:#fff;
+	border:1px solid #89C86D;
+}
+.Account-body-main-evaluate:hover{
+	color:#fff;
+	background:#89C86D;
+	border:1px solid #89C86D;
+}
+.Account-body-main-payment{
+	max-width:100px;
+	line-height:30px;
+	color:#89C86D;
+	background:#fff;
+	border:1px solid #89C86D;
+}
+.Account-body-main-payment:hover{
+	color:#fff;
+	background:#89C86D;
+	border:1px solid #89C86D;
+}
+
+
+
+
+
+
+
+
+
+
+/*账户信息部分*/
+.Account-body-data-main{
+	background:#fff;
+}
+.Account-body-data-main-line{
+	width:80%;
+	margin: 40px auto;
+	border:1px solid #ccc;
+}
+.Account-body-data-main>form>input{
+	border:0;
+	background-color:#ccc;
+}
+.Account-body-data-main-submit{
+	background:#fff !important;
+	color:#89C86D;
+}
+.Account-body-main-See-div-1{
+	z-index:1000;
+}
+
+
+
+
+
+
+
+/*用户地址添加*/
+.Account-body-address-main{
+	background:#fff;
+}
+.Account-body-address-main-div{
+	margin-top:10px;
+	border:1px solid #89C86D;
+}
+.Account-body-address-main-div>input{
+	border:0;
+	padding:4px;
+}
+.Account-body-address-main-div-close{
+	font-size:1.4rem;
+}
+.Account-body-address-main-div b{
+	font-size:2rem;
+}
+.Account-body-address-main-div-edit{
+	float:right;
+	font-size:1.4rem;
+}
+.Account-address-button{
+	border:0;
+	margin-right:10px;
+	background:#fff;
+}
+.increase-address:hover{
+	color:#fafafa;
+}
+
+
+
+@media only screen and (max-width: 768px){
+	.Account-body-nav-div1{
+		border-bottom:2px solid #fff;
+	}
+	.Account-order-nav>span{
+		text-align:center;
+		width:100%;
+	}
+}
+
+
+
+
+
+
+
+
+/*支付成功*/
+.payment-succeed{
+	width:61.8%;
+	height:61.8%;
+	margin:10% auto;
+	border:3px solid #89C86D;
+	overflow:hidden;
+	padding:60px;
+}
+.payment-succeed-duihao{
+	font-size:7rem;
+	margin-right:60px;
+}
+.Account-body-address-main-form{
+	min-width:460px;
+	min-height:326px;
+	background:cyan;
+	margin:0 auto;
+}
+
+
+
+
+/*我的订单-订单服务*/
+.dingdanfuwu-body-main{
+	width:90%;
+	max-width:1200px;
+	margin:20px auto;
+	border:6px solid #fafafa;
+	padding:40px;
+	height:300px;
+}
+.dingdanfuwu-body-main-div-1{
+	width:14%;
+}
+.dingdanfuwu-body-main-div-1>div{
+	margin-top:10px;
+	border-radius:10%;
+	border:1px solid #89C86D;
+	overflow:hidden;
+}
+.guanzhuanniu{
+	display:inline-block;
+	float:left;
+	padding:10px;
+	width:49%;
+}
+.dingdanfuwu-body-main-div-2{
+	width:65%;
+	padding:0 40px;
+	word-break:break-all;
+}
+.dingdanfuwu-body-main-div-2 dd span{
+	display:inline-block;
+	background:#fafafa;
+	color:#89C86D;
+	padding:2px;
+}
+.dingdanfuwu-body-main-div-2 dd span+span{
+	margin-left:10px;
+}
+.dingdanfuwu-body-main-div-2 dd{
+	margin-top:10px;
+}
+.dingdanfuwu-body-main-div-3{
+	width:20%;
+	padding:30px;
+}
+.dingdanfuwu-body-main-div-3>dl>dd+dd{
+	margin-top:10px;
+}
+.bg-CDCAC9{
+	background:#CDCAC9;
+}
+.dingdanfuwu-body-main-div-4{
+	width:2px;
+	height:100%;
+	background: radial-gradient(#C8E09F, #DAE9BE, #FBFBFA);
+}
+@media only screen and (max-width: 768px){
+	.dingdanfuwu-body-main-div-1>img{
+		margin:20px auto;
+	}
+	.dingdanfuwu-body-main-div-1>div{
+		margin:20px auto;
+	}
+	.dingdanfuwu-body-main{
+		height:860px;
+	}
+	.dingdanfuwu-body-main-div-4{
+		display:none;
+	}
+	.dingdanfuwu-body-main-div-1,.dingdanfuwu-body-main-div-2,.dingdanfuwu-body-main-div-3{
+		width:100%;
+		text-align:center;
+		clear: both !important;
+	}
+	.yisheng{
+		font-size:1.6rem;
+	}
+
+}

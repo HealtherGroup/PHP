@@ -1,0 +1,15 @@
+ul li{list-style: none;}
+#bg{background:#EDEDED;}
+#nicheng{width:50px;height:50px;border-radius:50%;margin:20px auto;}
+#nicheng img{width:60px;height:60px;border-radius:50%;}
+#nav{background:white;}
+#nav ul{margin-left: 30%;}
+#nav ul li a:hover{background: #89C86D;}
+#fuwu{background:white;padding-left:30%;}
+#fuwu h6{float: left;text-align: center;height:60px;line-height:60px;padding:0 20px;}
+#fuwu h6:hover{background:green;}
+#ziliao{background:white;margin-top:2%;}
+#ziliao .img-out{padding-left:15%;}
+#ziliao .img-out #img{width: 50px;height: 50px;border-radius: 50%;background: #000;margin-left:10%}
+#zhuyi{color:red;}
+

@@ -1,0 +1,36 @@
+.user-head{
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.user-head img{
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+}
+
+.user-head .user-name{
+	font-size: 1.6rem;
+	margin-top: 20px;
+}
+
+/**/
+.user-warp{
+	max-width: 1200px;
+	margin: auto;
+	padding-bottom: 120px;
+}
+
+.user-warp .user-menu{
+	text-align: center;
+	background: #FFFFFF;
+	height: 60px;
+}
+
+.user-warp .user-menu ul li{
+	width: 120px;
+	line-height: 60px;
+	display: inline-block;
+}
