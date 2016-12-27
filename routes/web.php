@@ -11,6 +11,9 @@
 |
 */
 
+//2016-12-27 18:51:16
+
+
 //支付宝支付处理1
 Route::get('alipay/pay','AlipayController@pay');
 //支付宝支付处理2
