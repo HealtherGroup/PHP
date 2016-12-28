@@ -135,6 +135,8 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin','middleware' => ['auth'
 	$router->get('/homeuser','HomeuserController@index');
 	//订单列表
 	$router->get('/orderlist','OrderlistController@index');
+        //订单详情
+        $router->get('/orderlist/detail','OrderlistController@detailindex');
 	//添加用户
 	$router->get('/homeuser/create','HomeuserController@create');
 	//处理添加用户
