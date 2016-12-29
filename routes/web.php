@@ -107,6 +107,7 @@ Route::any('/ok','WechatController@ok');
 Auth::routes();
 
 
+
 Route::get('/qqlogin','TestController@qqlogin');
 Route::get('/qq','TestController@qq');
 
