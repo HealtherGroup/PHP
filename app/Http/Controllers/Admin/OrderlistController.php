@@ -14,7 +14,6 @@ class OrderlistController extends Controller
     {
         $uid = $request->session()->get('userid');
         $res=DB::table('user')->where('id',$uid)->first();
-     
         if($uid == null){
             return redirect('/Pleaselogin');
         }
