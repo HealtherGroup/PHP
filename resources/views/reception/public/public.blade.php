@@ -8,6 +8,7 @@
   <meta content="black" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
   <meta content="email=no" name="format-detection">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta content="yes" name="apple-mobile-web-app-capable">
 	<meta content="telephone=no" name="format-detection">
   <link rel="stylesheet" href="{{ asset('reception/css/bootstrap.min.css') }}">

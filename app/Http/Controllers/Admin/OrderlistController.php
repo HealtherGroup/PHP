@@ -9,24 +9,39 @@ use App\Http\Requests\RoleRequest;
 class OrderlistController extends Controller
 {
     private $orderlist;
+
     public function index(Request $request)
     {
-        $uid = $request->session()->get('userid');
-        $res=DB::table('user')->where('id',$uid)->first();
-        if($uid == null){
-            return redirect('/Pleaselogin');
-        }
-        $list = \DB::table('order')->where('uid',$uid)->orderBy('id','desc')->get();
-
-        return view('admin.homeorder.list1',['list' => $list],['res'=>$res]);
+        $list = DB::table('order')
+            ->leftjoin('user', 'order.uid', '=', 'user.id')
+            ->orderBy('order.id','desc')
+            ->paginate(6);
+        return view('admin.homeorder.list1',['list' => $list]);
     }
-    public function detailindex(Request $request)
+    public function detailindex($id)
     {
-        $oid=$request->get('oid');
-        $username=$request->get('username');
-        echo $oid;
-        echo $username;
-        die;
-          $orderdata = \DB::table('orderdata')->get();
+         $list = DB::table('order')
+            ->leftjoin('orderdata', 'order.oid', '=', 'orderdata.oid')
+            ->where('order.oid',$id)
+            ->get();
+         $address=DB::table('address')->where('id',$list[0]->sid)->first();
+        return view('admin.homeorder.listdetail',['list' => $list],['address'=>$address]);
+
     }
+    public function send(Request $request)
+    {
+        if($request->input('kid') && $request->input('kid') && $request->input('kmark')){
+            $id = $request->input('oid');
+            $res = $request->except('_token','id');
+            $row = DB::table('order')->where('oid',$id)->update($res);
+            if($row){
+                return redirect('/admin/orderlist');
+            }else{
+                return back()->with("msg","失败请联系管理员");
+            }
+        }
+       return back()->with("msg","信息不能为空！！！");
+    }
+
+
 }
