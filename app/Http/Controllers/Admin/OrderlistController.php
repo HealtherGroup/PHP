@@ -42,6 +42,4 @@ class OrderlistController extends Controller
         }
        return back()->with("msg","信息不能为空！！！");
     }
-
-
 }
