@@ -18,7 +18,7 @@ class ShoplistController extends Controller
             ->paginate(8);
             return view('reception.Shoplist',['data3' => $data3],['shoplist' => $shoplist]);
         }else{
-            $shoplist = \DB::table('goods')->where('pid','<>',0)->paginate(8);
+            $shoplist = \DB::table('goods')->where('pid','<>',0)->  (8);
             return view('reception.Shoplist',['data3' => $data3],['shoplist' => $shoplist]);
         }
     }

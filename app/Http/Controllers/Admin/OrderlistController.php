@@ -9,7 +9,6 @@ use App\Http\Requests\RoleRequest;
 class OrderlistController extends Controller
 {
     private $orderlist;
-
     public function index(Request $request)
     {
         $uid = $request->session()->get('userid');
@@ -18,7 +17,7 @@ class OrderlistController extends Controller
             return redirect('/Pleaselogin');
         }
         $list = \DB::table('order')->where('uid',$uid)->orderBy('id','desc')->get();
-      
+
         return view('admin.homeorder.list1',['list' => $list],['res'=>$res]);
     }
     public function detailindex(Request $request)
