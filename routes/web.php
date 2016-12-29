@@ -112,9 +112,9 @@ Route::get('/Subscribelist/{id?}','Reception\SubscribeController@index');
 //对象详细
 Route::get('/detailed/{id?}','Reception\SubscribeController@detailed');
 //处理预约
-Route::post('detaileddo','Reception\SubscribeController@detaileddo');
+Route::post('/detaileddo','Reception\SubscribeController@detaileddo');
 //预约订单
-Route::get('bespokeorderlist','Reception\BespokeorderController@index');
+Route::get('/bespokeorderlist','Reception\BespokeorderController@index');
 //平台注册
 Route::get('/platformregister','Reception\platformregisterController@index');
 //出来平台注册
@@ -133,7 +133,9 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin','middleware' => ['auth'
 	//订单列表
 	$router->get('/orderlist','OrderlistController@index');
         //订单详情
-        $router->get('/orderlist/detail','OrderlistController@detailindex');
+        $router->get('/orderlist/detail/{oid?}','OrderlistController@detailindex');
+        //发货处理
+        $router->post('/orderlist/detail/send','OrderlistController@send');
 	//添加用户
 	$router->get('/homeuser/create','HomeuserController@create');
 	//处理添加用户

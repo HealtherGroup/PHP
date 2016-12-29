@@ -107,10 +107,10 @@
       </div>
       <div class="modal-body">
         <div class="padding-20">
-			<span><b>物流编号：</b></span>
-			<p><b>LP00027121r124112424(顺风快递)</b></p>
+			<span><b>物流编号</b></span>
+			<p class="kinfo1"><b>LP00027121r124112424(顺风快递)</b></p>
 			<p>物流信息：</p>
-			<p>2016-9-20 16:42 <span>卖家已发货</span></p>
+			<p class="kinfo2"><b>2016-9-20 16:42</b> <span>卖家已发货</span></p>
 		</div>
       </div>
       <div class="modal-footer">
@@ -126,11 +126,35 @@
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="./js/Account information.js"></script>	
+        <script type="text/javascript" src="./js/Account information.js"></script>	
+        <script type="text/javascript" src="{{ asset('reception/js/jquery-1.8.3.min.js') }}"></script>
+	
 	<script>
 		function cx(name,id)
 		{
-			alert(name);
+                    $('.padding-20').find('.kinfo1 b:first-child').html(name+id);
+                    $.ajax({
+                        'url':'/cx/yuantong/883853749913409303',
+                        'type':'GET',
+                        
+                         success:function(data){
+                            
+                             console.log(data);
+                            for(var key in data){
+                                console.log(key)
+                                var value=data[key]
+                                if(key==nu){
+                                     //console.log(value);
+                                }
+                                
+                             }
+                             
+                          
+                             
+                         },
+                         error:function(){
+                             alert('请求失败');
+                         },
+                    });
 		}
 	</script>
-@endsection

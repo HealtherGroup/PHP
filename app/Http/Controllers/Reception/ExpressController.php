@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 
 class ExpressController extends Controller
 {
-    public function index($name,$id)
+       public function index($name,$id)
     {
         //参数设置
         $post_data = array();
@@ -32,16 +32,9 @@ class ExpressController extends Controller
         curl_setopt($ch, CURLOPT_HEADER, 0);
         curl_setopt($ch, CURLOPT_URL,$url);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
-        //var_dump(json_decode($ch,true));
         $result = curl_exec($ch);
-        //dd($result);
-        //dd($result);
-        ///$data = str_replace("\&quot;",'"',$result );
-        //dd($data);
-        //$data1 = json_decode($data,true);
-        //var_dump($data);
-        //dd($data);
-        //return back(['kd' => $data]);
-
+        $data = str_replace("\&quot;",'"',$result );
+        $data = json_decode($data,true);
     }
+
 }
