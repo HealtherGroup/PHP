@@ -16,7 +16,7 @@ class OrderlistController extends Controller
             ->leftjoin('user', 'order.uid', '=', 'user.id')
             ->orderBy('order.id','desc')
             ->paginate(6);
-        return view('admin.homeorder.list1',['list' => $list]);
+        return view('admin.homeorder.list',['list' => $list]);
     }
     public function detailindex($id)
     {

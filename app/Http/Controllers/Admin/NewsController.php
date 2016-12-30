@@ -32,4 +32,10 @@ class NewsController extends Controller
             return back();
         }
     }
+    public function lists()
+    {
+        $data=\DB::table('news')->paginate(6);
+         //dd($data);
+        return view('admin.news.list',['data'=>$data]);
+    }
 }

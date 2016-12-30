@@ -5,13 +5,13 @@
 @section('content')
 <div class="row wrapper border-bottom white-bg page-heading">
   <div class="col-lg-10">
-    <h2>商品列表</h2>
+    <h2>新闻列表</h2>
     <ol class="breadcrumb">
         <li>
             <a href="{{url('admin/dash')}}">{!!trans('admin/breadcrumb.home')!!}</a>
         </li>
         <li class="active">
-            <strong>商品列表</strong>
+            <strong>新闻列表</strong>
         </li>
     </ol>
   </div>
@@ -28,7 +28,7 @@
     <div class="col-lg-12">
       <div class="ibox float-e-margins">
         <div class="ibox-title">
-          <h5>商品列表</h5>
+          <h5>新闻列表</h5>
           <div class="ibox-tools">
             <a class="collapse-link">
               <i class="fa fa-chevron-up"></i>
@@ -44,26 +44,21 @@
 	          <table class="table table-striped table-bordered table-hover dataTablesAjax" >
 		          <thead>
 			          <tr style="text-align:center;">
-			            <th>ID</th>
-                  <th>图片</th>
-			            <th width="180px">商品名</th>
-			            <th width="180px">单价</th>
-			            <th width="180px">分类</th>
-                  <th width="120px">操作</th>
+			            <th>新闻标题</th>
+			           
+			            <th width="240px">操作</th>
 			          </tr>
 		          </thead>
 		          <tbody>
               @foreach($data as $data)
-              <tr style="height:100px; line-height:100px;">
-                    <td>{{ $data->id }}</td>
-                    <td><img src="{{ asset('') }}{{ $data->thumbnail }}" style="width:80px;" /></td>
-                    <td>{{ $data->name }}</td>
-                    <td>{{ $data->price }}</td>
-                    <td>{{ $data->class }}</td>
+              <tr style="height:50px; line-height:100px;">
+                    
+                    <td>{{ $data->title }}</td>
+                 
                     <td >
-                        <a href="">查看</a>
-                        |<a>编辑</a>
-                        |<a>删除</a>
+                        <a href="">查看</a>&nbsp&nbsp&nbsp
+                        |&nbsp&nbsp&nbsp<a>编辑</a>&nbsp&nbsp&nbsp
+                        |&nbsp&nbsp&nbsp<a>删除</a>&nbsp&nbsp&nbsp
                     </td>
               </tr>
               @endforeach

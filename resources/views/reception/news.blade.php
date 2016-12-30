@@ -29,9 +29,7 @@
         </div>
                         <div class="box-footer clearfix">
 
-                  <ul class="pagination pagination-sm no-margin pull-right">
-                    {!! $newslist->render() !!}
-                  </ul>
+               <div style="float:right"> {!! $data->render() !!}</div>
                 </div>
     </div>
 </div>

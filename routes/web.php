@@ -10,6 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+
 //支付宝支付处理1
 Route::get('alipay/pay','AlipayController@pay');
 //支付宝支付处理2
@@ -103,7 +104,6 @@ Route::any('/ok','WechatController@ok');
 Auth::routes();
 
 
-
 Route::get('/qqlogin','TestController@qqlogin');
 Route::get('/qq','TestController@qq');
 
@@ -112,9 +112,9 @@ Route::get('/Subscribelist/{id?}','Reception\SubscribeController@index');
 //对象详细
 Route::get('/detailed/{id?}','Reception\SubscribeController@detailed');
 //处理预约
-Route::post('/detaileddo','Reception\SubscribeController@detaileddo');
+Route::post('detaileddo','Reception\SubscribeController@detaileddo');
 //预约订单
-Route::get('/bespokeorderlist','Reception\BespokeorderController@index');
+Route::get('bespokeorderlist','Reception\BespokeorderController@index');
 //平台注册
 Route::get('/platformregister','Reception\platformregisterController@index');
 //出来平台注册
@@ -132,10 +132,6 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin','middleware' => ['auth'
 	$router->get('/homeuser','HomeuserController@index');
 	//订单列表
 	$router->get('/orderlist','OrderlistController@index');
-    //订单详情
-    $router->get('/orderlist/detail/{oid?}','OrderlistController@detailindex');
-    //发货处理
-    $router->post('/orderlist/detail/send','OrderlistController@send');
 	//添加用户
 	$router->get('/homeuser/create','HomeuserController@create');
 	//处理添加用户
@@ -157,18 +153,14 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin','middleware' => ['auth'
 	$router->get('/up','HomeuserController@up');
 	//商品列表
 	$router->get('/goodslist','GoodsController@lst');
-	//删除商品
-	$router->get('/goodsde/{id?}','GoodsController@de');
-	//编辑商品
-	$router->get('/goodsedit/{id?}','GoodsController@edit');
-	//保存编辑商品
-	$router->post('/goodseditdo','GoodsController@editdo');
 
 
 
 	//添加新闻
 	$router->get('/addnews','NewsController@add');
 	$router->post('/doaddnews','NewsController@doadd');
+        //新闻列表
+        $router->get('/newslist','NewsController@lists');
 	// 权限
 	require(__DIR__ . '/admin/permission.php');
 	// 角色
