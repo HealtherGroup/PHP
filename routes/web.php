@@ -157,6 +157,12 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin','middleware' => ['auth'
 	$router->get('/up','HomeuserController@up');
 	//商品列表
 	$router->get('/goodslist','GoodsController@lst');
+	//删除商品
+	$router->get('/goodsde/{id?}','GoodsController@de');
+	//编辑商品
+	$router->get('/goodsedit/{id?}','GoodsController@edit');
+	//保存编辑商品
+	$router->post('/goodseditdo','GoodsController@editdo');
 
 
 

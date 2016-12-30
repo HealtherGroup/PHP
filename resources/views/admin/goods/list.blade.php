@@ -54,16 +54,16 @@
 		          </thead>
 		          <tbody>
               @foreach($data as $data)
-              <tr style="height:100px; line-height:100px;">
+              <tr>
                     <td>{{ $data->id }}</td>
                     <td><img src="{{ asset('') }}{{ $data->thumbnail }}" style="width:80px;" /></td>
                     <td>{{ $data->name }}</td>
                     <td>{{ $data->price }}</td>
                     <td>{{ $data->class }}</td>
                     <td >
-                        <a href="">查看</a>
-                        |<a>编辑</a>
-                        |<a>删除</a>
+                        <a href="{{ asset('/goods') }}/{{ $data->id }}"/>查看</a>
+                        |<a href="{{ asset('/admin/goodsedit') }}/{{ $data->id }}">编辑</a>
+                        |<a href="{{ asset('/admin/goodsde') }}/{{ $data->id }}">删除</a>
                     </td>
               </tr>
               @endforeach
