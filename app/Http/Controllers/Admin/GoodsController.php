@@ -62,4 +62,21 @@ class GoodsController extends Controller
         $data = \DB::table('goods')->get();
         return view('admin.goods.list',['data' => $data]);
     }
+    public function de($id)
+    {
+        $data = \DB::table('goods')->where('id',$id)->delete();
+        if($data){
+            return back();
+        }
+    }
+    public function edit($id)
+    {
+        $re = \DB::table('goods')->where('id',$id)->first();
+        return view('admin.goods.edit',['re' => $re]);
+    }
+    public function editdo(Request $request)
+    {
+        $data = $request->all();
+        dd($data);
+    }
 }
